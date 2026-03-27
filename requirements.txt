@@ -1,0 +1,16 @@
+greenlet<3.1; python_version < "3.10"
+langchain
+langchain-core
+langchain-community
+langchain-text-splitters
+langchain-google-genai
+langchain-openai
+langchain-chroma
+chromadb
+gradio
+huggingface_hub<1.0
+pypdf
+tiktoken
+pydantic
+python-dotenv
+unstructured
