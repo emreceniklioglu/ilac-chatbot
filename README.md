@@ -10,7 +10,9 @@ python_version: "3.10"
 Turkce ilac kullanma talimatlarindan bilgi alan, PDF tabanli bir RAG sohbet uygulamasidir.
 Uygulama, prospektusleri okuyup vektor veritabanina kaydeder; kullanici sorularini bu bilgi tabanina gore yanitlar.
 
-## Ozellikler
+## ÖNEMLİ !! Doküman olarak kullandığım pdflerin ait olduğu ilaçların adları drug_list.text belgesinin içerisinde yazmaktadır. Model sadece bu ilaçlarla ilgili cevap verebilir.
+
+## Özellikler
 
 - PDF kullanma talimatlarindan otomatik veri cekme
 - Regex tabanli metin temizleme ve bolum ayirma
@@ -20,7 +22,7 @@ Uygulama, prospektusleri okuyup vektor veritabanina kaydeder; kullanici sorulari
 - Gradio tabanli web arayuzu
 - Hafizasiz, tek soruluk RAG akisi
 
-## Kullanilan Teknolojiler
+## Kullanılan Teknolojiler
 
 - Python
 - LangChain
@@ -29,7 +31,6 @@ Uygulama, prospektusleri okuyup vektor veritabanina kaydeder; kullanici sorulari
 - Google Gemini API
 - Jina Embeddings
 - PyPDF
-- python-dotenv
 - Hugging Face Spaces
 
 ## Proje Yapisi
@@ -78,12 +79,8 @@ python -m app.ingest --pdf-dir ./pdfs --mode full
 python app.py
 ```
 
-## Hugging Face Spaces
 
-Bu repo, Hugging Face Spaces uzerinde Gradio uygulamasi olarak calistirilabilir.
-Spaces tarafinda gizli anahtarlari `.env` ile degil, `Settings > Variables and secrets` altindan tanimlayin.
-
-## Gelistirilecek Ozellikler
+## Geliştirilecek Özellikler
 
 - Daha iyi bolum tespiti ve chunk kalitesi
 - Benzer ilaclar icin akilli eslestirme ve yeniden sorgulama
@@ -94,8 +91,3 @@ Spaces tarafinda gizli anahtarlari `.env` ile degil, `Settings > Variables and s
 - Toplu PDF yukleme ve otomatik yeniden indeksleme
 - Hata izleme ve log kaydi iyilestirmeleri
 
-## Notlar
-
-- `chroma_db/` klasoru, sorgu calismasi icin onceden olusturulmus olmalidir.
-- `pdfs/` klasoru yayina alinacak zorunlu bir klasor degildir.
-- `drugs_list.txt`, ingest sirasinda cikarilan ilac adlarini tutar.
