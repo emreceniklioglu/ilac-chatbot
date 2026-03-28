@@ -1,12 +1,10 @@
----
-title: ilacChat
-sdk: gradio
-app_file: app.py
-python_version: "3.10"
----
+
 # Huggingface Space : [emrecn/ilacChatBot](https://huggingface.co/spaces/emrecn/ilacChatBot)
 
-# ilacChat
+<img width="2390" height="434" alt="mermaid-diagram" src="https://github.com/user-attachments/assets/1ba2f96c-0bfc-4d5d-80f2-c06752615501" />
+
+
+# ilacChatBot
 
 Turkce ilac kullanma talimatlarindan bilgi alan, PDF tabanli bir RAG sohbet uygulamasidir.
 Uygulama, prospektusleri okuyup vektor veritabanina kaydeder; kullanici sorularini bu bilgi tabanina gore yanitlar.
