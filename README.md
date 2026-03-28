@@ -4,7 +4,7 @@ sdk: gradio
 app_file: app.py
 python_version: "3.10"
 ---
-# Huggingface Space : emrecn/ilacChatBot
+# Huggingface Space : [emrecn/ilacChatBot](https://huggingface.co/spaces/emrecn/ilacChatBot)
 
 # ilacChat
 
